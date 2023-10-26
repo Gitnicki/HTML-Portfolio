@@ -6,7 +6,7 @@
     <title>Nicoles Portfolio</title>
 </head>
 <body>
-    <h1>Nicole</h1>
+    <h1>{{name}}</h1>
     <h2>Demnächst krasse IT-lerin</h2>
     <ul>
         <li><a href="/home">Home</a></li>
@@ -21,22 +21,20 @@
             <h3>Skills</h3>
             <p>Mit diesen Tools und Sprachen arbeite ich jeden Tag</p>
             <ul>
-                <li>VSCode</li>
-                <li>CLI</li>
-                <li>Linux</li>
-                <li>Python</li>
-                <li>HTML</li>
+                {% for skill in skills%}
+                <li>{{skill}}</li>
+                {% endfor %}
             </ul>
         </section>
         <h3>Kontakt</h3>
-        <p>Über das Kontaktformular kannst du mich erreichen:</p>
+        <p>Über das <a href="/contact">Kontaktformular</a> kannst du mich erreichen:</p>
         <footer>
             <h3>Credits</h3>
             <p>Vielen Dank an Techstarter:</p>
             <a href="https://techstarter.de/" target="_blank">Techstarter.de</a>
         </footer>
     </main>
-
+git 
     
 </body>
 </html>
